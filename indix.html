@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>UI/UX Banner</title>
+
+<style>
+body{
+    margin:0;
+    background:#000;
+    text-align:center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* imagem */
+.banner img{
+    width:100%;
+    max-height:500px;
+    object-fit:cover;
+}
+
+/* faixa do texto */
+.texto-movendo{
+    background:rgba(0,0,0,0.7);
+    color:white;
+    font-size:40px;
+    font-weight:bold;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+/* animação */
+.texto-movendo span{
+    display:inline-block;
+    padding-left:100%;
+    animation:mover 12s linear infinite;
+}
+
+@keyframes mover{
+    0%{
+        transform:translateX(-100%);
+    }
+    100%{
+        transform:translateX(100%);
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="banner">
+    <!-- coloque aqui o nome do seu arquivo -->
+    <img src="imagem.jpg" alt="UI UX">
+</div>
+
+<div class="texto-movendo">
+    <span>Strategy — UI/UX — Strategy — UI/UX — Strategy — UI/UX —</span>
+</div>
+
+</body>
+</html>

@@ -8,28 +8,27 @@
 
 body{
 margin:0;
+padding:0;
 overflow-x:hidden;
 font-family:Arial, Helvetica, sans-serif;
+background:black;
 }
 
-/* banner */
 .banner{
 position:relative;
 width:100%;
 height:500px;
 overflow:hidden;
-line-height:0; /* remove espaço branco */
 }
 
-/* imagem */
 .banner img{
 width:100%;
 height:100%;
 object-fit:cover;
-display:block; /* remove espaço da imagem */
+display:block;
 }
 
-/* texto passando */
+/* texto passando em cima da imagem */
 .texto{
 position:absolute;
 bottom:40px;
@@ -37,7 +36,6 @@ left:0;
 width:100%;
 overflow:hidden;
 white-space:nowrap;
-z-index:2;
 }
 
 .texto span{
@@ -46,7 +44,6 @@ font-weight:bold;
 color:white;
 display:inline-block;
 animation:mover 10s linear infinite;
-text-shadow:0 5px 20px rgba(0,0,0,0.5);
 }
 
 /* animação */
